@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<listeners>
+		<listener class-name="base.Listeners"/>
+		<listener class-name="base.RetryListener"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	</listeners>
+  <test name="Test1">
+    <classes>
+      <class name="base.BaseTest"/>
+      <class name="testcase.Login"/>
+      <class name="testcase.Register"/>
+      <class name="testcase.Desktop"/>
+      <class name="base.DataProviderTest"/>
+      <class name="testcase.Search"/>
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- Suite1 -->
+

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Method name is - verifyWithValidCredentials]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - verifyIfErrorMessageIsDisplayedForInvalidPassword]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - verifyIfUserIsableToRegisterUsingMyAccountRegisterButton]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - verifyIfUserIsableToRegisterFromNewCustomerPage]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - addToCartDesktopPcTest]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - addToCartDesktopMacTest]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - verifyIfSearchItemIsDisplayed]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - verifyIfSearchItemIsDisplayed]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+    <line>
+      <![CDATA[Method name is - verifyIfSearchItemIsDisplayed]]>
+    </line>
+    <line>
+      <![CDATA[Status of execution is - 1]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-10-16T23:09:09 IST" name="Suite1" finished-at="2023-10-16T23:10:01 IST" duration-ms="51981">
+    <groups>
+    </groups>
+    <test started-at="2023-10-16T23:09:09 IST" name="Test1" finished-at="2023-10-16T23:10:01 IST" duration-ms="51981">
+      <class name="testcase.Desktop">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Desktop@19976a65]" started-at="2023-10-16T23:09:30 IST" name="setUp" finished-at="2023-10-16T23:09:32 IST" duration-ms="2339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartDesktopPcTest()[pri:1, instance:testcase.Desktop@19976a65]" started-at="2023-10-16T23:09:32 IST" name="addToCartDesktopPcTest" finished-at="2023-10-16T23:09:40 IST" duration-ms="8424" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - addToCartDesktopPcTest]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addToCartDesktopPcTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Desktop@19976a65]" started-at="2023-10-16T23:09:40 IST" name="afterTest" finished-at="2023-10-16T23:09:41 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Desktop@19976a65]" started-at="2023-10-16T23:09:41 IST" name="setUp" finished-at="2023-10-16T23:09:43 IST" duration-ms="2192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartDesktopMacTest()[pri:2, instance:testcase.Desktop@19976a65]" started-at="2023-10-16T23:09:43 IST" name="addToCartDesktopMacTest" finished-at="2023-10-16T23:09:43 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - addToCartDesktopMacTest]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addToCartDesktopMacTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Desktop@19976a65]" started-at="2023-10-16T23:09:43 IST" name="afterTest" finished-at="2023-10-16T23:09:44 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcase.Desktop -->
+      <class name="testcase.Register">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Register@2f666ebb]" started-at="2023-10-16T23:09:21 IST" name="setUp" finished-at="2023-10-16T23:09:23 IST" duration-ms="2583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIfUserIsableToRegisterUsingMyAccountRegisterButton()[pri:1, instance:testcase.Register@2f666ebb]" started-at="2023-10-16T23:09:23 IST" name="verifyIfUserIsableToRegisterUsingMyAccountRegisterButton" finished-at="2023-10-16T23:09:25 IST" duration-ms="1584" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - verifyIfUserIsableToRegisterUsingMyAccountRegisterButton]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyIfUserIsableToRegisterUsingMyAccountRegisterButton -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Register@2f666ebb]" started-at="2023-10-16T23:09:25 IST" name="afterTest" finished-at="2023-10-16T23:09:25 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Register@2f666ebb]" started-at="2023-10-16T23:09:25 IST" name="setUp" finished-at="2023-10-16T23:09:28 IST" duration-ms="2575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIfUserIsableToRegisterFromNewCustomerPage()[pri:2, instance:testcase.Register@2f666ebb]" started-at="2023-10-16T23:09:28 IST" name="verifyIfUserIsableToRegisterFromNewCustomerPage" finished-at="2023-10-16T23:09:29 IST" duration-ms="1826" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - verifyIfUserIsableToRegisterFromNewCustomerPage]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyIfUserIsableToRegisterFromNewCustomerPage -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Register@2f666ebb]" started-at="2023-10-16T23:09:29 IST" name="afterTest" finished-at="2023-10-16T23:09:30 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcase.Register -->
+      <class name="testcase.Search">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:09:44 IST" name="setUp" finished-at="2023-10-16T23:09:46 IST" duration-ms="2431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIfSearchItemIsDisplayed(java.lang.String)[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:09:46 IST" name="verifyIfSearchItemIsDisplayed" data-provider="searchData" finished-at="2023-10-16T23:09:54 IST" duration-ms="8393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dell]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - verifyIfSearchItemIsDisplayed]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyIfSearchItemIsDisplayed -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:09:54 IST" name="afterTest" finished-at="2023-10-16T23:09:55 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:09:55 IST" name="setUp" finished-at="2023-10-16T23:09:57 IST" duration-ms="2483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIfSearchItemIsDisplayed(java.lang.String)[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:09:57 IST" name="verifyIfSearchItemIsDisplayed" data-provider="searchData" finished-at="2023-10-16T23:09:57 IST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - verifyIfSearchItemIsDisplayed]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyIfSearchItemIsDisplayed -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:09:57 IST" name="afterTest" finished-at="2023-10-16T23:09:58 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:09:58 IST" name="setUp" finished-at="2023-10-16T23:10:00 IST" duration-ms="2366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIfSearchItemIsDisplayed(java.lang.String)[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:10:00 IST" name="verifyIfSearchItemIsDisplayed" data-provider="searchData" finished-at="2023-10-16T23:10:00 IST" duration-ms="418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - verifyIfSearchItemIsDisplayed]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyIfSearchItemIsDisplayed -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Search@4b2c5e02]" started-at="2023-10-16T23:10:00 IST" name="afterTest" finished-at="2023-10-16T23:10:01 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcase.Search -->
+      <class name="testcase.Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Login@dc9876b]" started-at="2023-10-16T23:09:09 IST" name="setUp" finished-at="2023-10-16T23:09:14 IST" duration-ms="5145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWithValidCredentials()[pri:1, instance:testcase.Login@dc9876b]" started-at="2023-10-16T23:09:14 IST" name="verifyWithValidCredentials" finished-at="2023-10-16T23:09:15 IST" duration-ms="1064" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - verifyWithValidCredentials]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyWithValidCredentials -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Login@dc9876b]" started-at="2023-10-16T23:09:15 IST" name="afterTest" finished-at="2023-10-16T23:09:15 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Login@dc9876b]" started-at="2023-10-16T23:09:15 IST" name="setUp" finished-at="2023-10-16T23:09:18 IST" duration-ms="2445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIfErrorMessageIsDisplayedForInvalidPassword()[pri:2, instance:testcase.Login@dc9876b]" started-at="2023-10-16T23:09:18 IST" name="verifyIfErrorMessageIsDisplayedForInvalidPassword" finished-at="2023-10-16T23:09:20 IST" duration-ms="2885" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Method name is - verifyIfErrorMessageIsDisplayedForInvalidPassword]]>
+            </line>
+            <line>
+              <![CDATA[Status of execution is - 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyIfErrorMessageIsDisplayedForInvalidPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Login@dc9876b]" started-at="2023-10-16T23:09:20 IST" name="afterTest" finished-at="2023-10-16T23:09:21 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcase.Login -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

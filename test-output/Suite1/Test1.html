@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 16 23:09:09 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>51 seconds (51981 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.Desktop.addToCartDesktopMacTest()'><b>addToCartDesktopMacTest</b><br>Test class: testcase.Desktop<br/>
+<a href="#Output-765551203" onClick='toggleBox("Output-765551203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-765551203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-765551203">
+Method name is - addToCartDesktopMacTest<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testcase.Desktop@19976a65</td></tr>
+<tr>
+<td title='testcase.Search.verifyIfSearchItemIsDisplayed()'><b>verifyIfSearchItemIsDisplayed</b><br>Test class: testcase.Search<br>Parameters: HP<br/>
+<a href="#Output-162919367" onClick='toggleBox("Output-162919367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-162919367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-162919367">
+Method name is - verifyIfSearchItemIsDisplayed<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testcase.Search@4b2c5e02</td></tr>
+<tr>
+<td title='testcase.Search.verifyIfSearchItemIsDisplayed()'><b>verifyIfSearchItemIsDisplayed</b><br>Test class: testcase.Search<br>Parameters: Dell<br/>
+<a href="#Output-789640755" onClick='toggleBox("Output-789640755", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-789640755" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-789640755">
+Method name is - verifyIfSearchItemIsDisplayed<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testcase.Search@4b2c5e02</td></tr>
+<tr>
+<td title='testcase.Register.verifyIfUserIsableToRegisterUsingMyAccountRegisterButton()'><b>verifyIfUserIsableToRegisterUsingMyAccountRegisterButton</b><br>Test class: testcase.Register<br/>
+<a href="#Output-1708490318" onClick='toggleBox("Output-1708490318", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1708490318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1708490318">
+Method name is - verifyIfUserIsableToRegisterUsingMyAccountRegisterButton<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>testcase.Register@2f666ebb</td></tr>
+<tr>
+<td title='testcase.Login.verifyWithValidCredentials()'><b>verifyWithValidCredentials</b><br>Test class: testcase.Login<br/>
+<a href="#Output-501650218" onClick='toggleBox("Output-501650218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-501650218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-501650218">
+Method name is - verifyWithValidCredentials<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>testcase.Login@dc9876b</td></tr>
+<tr>
+<td title='testcase.Login.verifyIfErrorMessageIsDisplayedForInvalidPassword()'><b>verifyIfErrorMessageIsDisplayedForInvalidPassword</b><br>Test class: testcase.Login<br/>
+<a href="#Output-181260145" onClick='toggleBox("Output-181260145", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-181260145" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-181260145">
+Method name is - verifyIfErrorMessageIsDisplayedForInvalidPassword<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>testcase.Login@dc9876b</td></tr>
+<tr>
+<td title='testcase.Register.verifyIfUserIsableToRegisterFromNewCustomerPage()'><b>verifyIfUserIsableToRegisterFromNewCustomerPage</b><br>Test class: testcase.Register<br/>
+<a href="#Output-438493423" onClick='toggleBox("Output-438493423", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-438493423" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-438493423">
+Method name is - verifyIfUserIsableToRegisterFromNewCustomerPage<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>testcase.Register@2f666ebb</td></tr>
+<tr>
+<td title='testcase.Search.verifyIfSearchItemIsDisplayed()'><b>verifyIfSearchItemIsDisplayed</b><br>Test class: testcase.Search<br>Parameters: Mac<br/>
+<a href="#Output-1889468930" onClick='toggleBox("Output-1889468930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1889468930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1889468930">
+Method name is - verifyIfSearchItemIsDisplayed<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testcase.Search@4b2c5e02</td></tr>
+<tr>
+<td title='testcase.Desktop.addToCartDesktopPcTest()'><b>addToCartDesktopPcTest</b><br>Test class: testcase.Desktop<br/>
+<a href="#Output-1768639125" onClick='toggleBox("Output-1768639125", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1768639125" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1768639125">
+Method name is - addToCartDesktopPcTest<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testcase.Desktop@19976a65</td></tr>
+</table><p>
+</body>
+</html>
