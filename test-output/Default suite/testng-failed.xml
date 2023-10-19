@@ -5,8 +5,8 @@
     <classes>
       <class name="testcase.Register">
         <methods>
+          <include name="verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered"/>
           <include name="setUp"/>
-          <include name="verifyIfUserIsableToRegisterFromNewCustomerPage"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- testcase.Register -->

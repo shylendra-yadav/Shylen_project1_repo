@@ -1,7 +1,7 @@
 package testcase;
 import java.util.Random;
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -58,5 +58,18 @@ import base.BaseTest;
     	
     	Assert.assertTrue(driver.findElement(By.xpath("//div/h1[text()='Your Account Has Been Created!']")).isDisplayed());
     }
+    @Test(priority=3)
+    public void verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered() {
+    	driver.findElement(By.xpath(prop.getProperty("MyAccountXpath"))).click();
+    	driver.findElement(By.xpath(prop.getProperty("RegisterButtonXpath"))).click();
+    	driver.findElement(By.xpath(prop.getProperty("RegisterContinueButtonXpath"))).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div")).isDisplayed());
+    	Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div")).isDisplayed());
+    	Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-email']/following-sibling::div")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div")).isDisplayed());
+        
+    }
     
 }
+   

@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="base.Listeners"/>
-    <listener class-name="base.RetryListener"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-  </listeners>
-  <test thread-count="5" name="Test1(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.Login">
+      <class name="testcase.Register">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyWithValidCredentials"/>
-          <include name="afterTest"/>
-          <include name="verifyIfErrorMessageIsDisplayedForInvalidPassword"/>
-        </methods>
-      </class> <!-- testcase.Login -->
-      <class name="testcase.Search">
-        <methods>
+          <include name="verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered"/>
           <include name="setUp"/>
           <include name="afterTest"/>
-          <include name="verifyIfSearchItemIsDisplayed"/>
         </methods>
-      </class> <!-- testcase.Search -->
-      <class name="testcase.Desktop">
-        <methods>
-          <include name="setUp"/>
-          <include name="addToCartDesktopMacTest"/>
-          <include name="afterTest"/>
-          <include name="addToCartDesktopPcTest"/>
-        </methods>
-      </class> <!-- testcase.Desktop -->
+      </class> <!-- testcase.Register -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
