@@ -13,24 +13,8 @@
           <include name="setUp"/>
           <include name="verifyWithValidCredentials"/>
           <include name="afterTest"/>
-          <include name="verifyIfErrorMessageIsDisplayedForInvalidPassword"/>
         </methods>
       </class> <!-- testcase.Login -->
-      <class name="testcase.Search">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterTest"/>
-          <include name="verifyIfSearchItemIsDisplayed"/>
-        </methods>
-      </class> <!-- testcase.Search -->
-      <class name="testcase.Desktop">
-        <methods>
-          <include name="setUp"/>
-          <include name="addToCartDesktopMacTest"/>
-          <include name="afterTest"/>
-          <include name="addToCartDesktopPcTest"/>
-        </methods>
-      </class> <!-- testcase.Desktop -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

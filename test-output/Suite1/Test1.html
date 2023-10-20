@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 16 23:09:09 IST 2023</td>
+<td>Started on:</td><td>Fri Oct 20 11:34:50 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>51 seconds (51981 ms)</td>
+<tr><td>Total time:</td><td>73 seconds (73496 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,103 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.Login.verifyWithValidCredentials()'><b>verifyWithValidCredentials</b><br>Test class: testcase.Login<br/>
+<a href="#Output-440926517" onClick='toggleBox("Output-440926517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-440926517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-440926517">
+Method name is - verifyWithValidCredentials<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h2[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=118.0.5993.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f54297a752ae96e05214412137662500, findElement {using=xpath, value=//div/h2[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55964/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f54297a752ae96e05214412137662500
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at testcase.Login.verifyWithValidCredentials(Login.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace440926517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace440926517'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/h2[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=118.0.5993.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f54297a752ae96e05214412137662500, findElement {using=xpath, value=//div/h2[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55964/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f54297a752ae96e05214412137662500
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at testcase.Login.verifyWithValidCredentials(Login.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>8</td>
+<td>testcase.Login@a1f72f5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,122 +172,122 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcase.Desktop.addToCartDesktopMacTest()'><b>addToCartDesktopMacTest</b><br>Test class: testcase.Desktop<br/>
-<a href="#Output-765551203" onClick='toggleBox("Output-765551203", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-765551203" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-765551203">
-Method name is - addToCartDesktopMacTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>testcase.Desktop@19976a65</td></tr>
-<tr>
 <td title='testcase.Search.verifyIfSearchItemIsDisplayed()'><b>verifyIfSearchItemIsDisplayed</b><br>Test class: testcase.Search<br>Parameters: HP<br/>
-<a href="#Output-162919367" onClick='toggleBox("Output-162919367", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-40936992" onClick='toggleBox("Output-40936992", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-162919367" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-162919367">
+<a href="#Output-40936992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-40936992">
 Method name is - verifyIfSearchItemIsDisplayed<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>testcase.Search@4b2c5e02</td></tr>
-<tr>
-<td title='testcase.Search.verifyIfSearchItemIsDisplayed()'><b>verifyIfSearchItemIsDisplayed</b><br>Test class: testcase.Search<br>Parameters: Dell<br/>
-<a href="#Output-789640755" onClick='toggleBox("Output-789640755", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-789640755" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-789640755">
-Method name is - verifyIfSearchItemIsDisplayed<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>testcase.Search@4b2c5e02</td></tr>
-<tr>
-<td title='testcase.Register.verifyIfUserIsableToRegisterUsingMyAccountRegisterButton()'><b>verifyIfUserIsableToRegisterUsingMyAccountRegisterButton</b><br>Test class: testcase.Register<br/>
-<a href="#Output-1708490318" onClick='toggleBox("Output-1708490318", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1708490318" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1708490318">
-Method name is - verifyIfUserIsableToRegisterUsingMyAccountRegisterButton<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testcase.Register@2f666ebb</td></tr>
-<tr>
-<td title='testcase.Login.verifyWithValidCredentials()'><b>verifyWithValidCredentials</b><br>Test class: testcase.Login<br/>
-<a href="#Output-501650218" onClick='toggleBox("Output-501650218", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-501650218" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-501650218">
-Method name is - verifyWithValidCredentials<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testcase.Login@dc9876b</td></tr>
+<td>testcase.Search@6531a794</td></tr>
 <tr>
 <td title='testcase.Login.verifyIfErrorMessageIsDisplayedForInvalidPassword()'><b>verifyIfErrorMessageIsDisplayedForInvalidPassword</b><br>Test class: testcase.Login<br/>
-<a href="#Output-181260145" onClick='toggleBox("Output-181260145", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1744579245" onClick='toggleBox("Output-1744579245", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-181260145" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-181260145">
+<a href="#Output-1744579245" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744579245">
 Method name is - verifyIfErrorMessageIsDisplayedForInvalidPassword<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>2</td>
-<td>testcase.Login@dc9876b</td></tr>
+<td>testcase.Login@a1f72f5</td></tr>
 <tr>
 <td title='testcase.Register.verifyIfUserIsableToRegisterFromNewCustomerPage()'><b>verifyIfUserIsableToRegisterFromNewCustomerPage</b><br>Test class: testcase.Register<br/>
-<a href="#Output-438493423" onClick='toggleBox("Output-438493423", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1967434886" onClick='toggleBox("Output-1967434886", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-438493423" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-438493423">
+<a href="#Output-1967434886" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1967434886">
 Method name is - verifyIfUserIsableToRegisterFromNewCustomerPage<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
-<td>1</td>
-<td>testcase.Register@2f666ebb</td></tr>
+<td>3</td>
+<td>testcase.Register@4b2c5e02</td></tr>
+<tr>
+<td title='testcase.Register.verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered()'><b>verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered</b><br>Test class: testcase.Register<br/>
+<a href="#Output-1893088773" onClick='toggleBox("Output-1893088773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1893088773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1893088773">
+Method name is - verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testcase.Register@4b2c5e02</td></tr>
 <tr>
 <td title='testcase.Search.verifyIfSearchItemIsDisplayed()'><b>verifyIfSearchItemIsDisplayed</b><br>Test class: testcase.Search<br>Parameters: Mac<br/>
-<a href="#Output-1889468930" onClick='toggleBox("Output-1889468930", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-739003402" onClick='toggleBox("Output-739003402", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1889468930" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1889468930">
+<a href="#Output-739003402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-739003402">
 Method name is - verifyIfSearchItemIsDisplayed<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>testcase.Search@4b2c5e02</td></tr>
+<td>testcase.Search@6531a794</td></tr>
+<tr>
+<td title='testcase.Search.verifyIfSearchItemIsDisplayed()'><b>verifyIfSearchItemIsDisplayed</b><br>Test class: testcase.Search<br>Parameters: Dell<br/>
+<a href="#Output-2142052682" onClick='toggleBox("Output-2142052682", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2142052682" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2142052682">
+Method name is - verifyIfSearchItemIsDisplayed<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testcase.Search@6531a794</td></tr>
 <tr>
 <td title='testcase.Desktop.addToCartDesktopPcTest()'><b>addToCartDesktopPcTest</b><br>Test class: testcase.Desktop<br/>
-<a href="#Output-1768639125" onClick='toggleBox("Output-1768639125", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1789376127" onClick='toggleBox("Output-1789376127", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1768639125" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1768639125">
+<a href="#Output-1789376127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1789376127">
 Method name is - addToCartDesktopPcTest<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>8</td>
-<td>testcase.Desktop@19976a65</td></tr>
+<td>testcase.Desktop@57a3e26a</td></tr>
+<tr>
+<td title='testcase.Desktop.addToCartDesktopMacTest()'><b>addToCartDesktopMacTest</b><br>Test class: testcase.Desktop<br/>
+<a href="#Output-1589745212" onClick='toggleBox("Output-1589745212", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1589745212" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1589745212">
+Method name is - addToCartDesktopMacTest<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testcase.Desktop@57a3e26a</td></tr>
+<tr>
+<td title='testcase.Register.verifyIfUserIsableToRegisterUsingMyAccountRegisterButton()'><b>verifyIfUserIsableToRegisterUsingMyAccountRegisterButton</b><br>Test class: testcase.Register<br/>
+<a href="#Output-1207953777" onClick='toggleBox("Output-1207953777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1207953777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1207953777">
+Method name is - verifyIfUserIsableToRegisterUsingMyAccountRegisterButton<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>testcase.Register@4b2c5e02</td></tr>
 </table><p>
 </body>
 </html>

@@ -63,12 +63,17 @@ import base.BaseTest;
     	driver.findElement(By.xpath(prop.getProperty("MyAccountXpath"))).click();
     	driver.findElement(By.xpath(prop.getProperty("RegisterButtonXpath"))).click();
     	driver.findElement(By.xpath(prop.getProperty("RegisterContinueButtonXpath"))).click();
-        Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div")).isDisplayed());
-    	Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div")).isDisplayed());
-    	Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-email']/following-sibling::div")).isDisplayed());
-        Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).isDisplayed());
-        Assert.assertTrue(driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div")).isDisplayed());
-        
+    	
+    	WebElement errorFirstName =  driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div"));
+    	Assert.assertEquals(errorFirstName.getText(), "First Name must be between 1 and 32 characters!");
+    	WebElement errorLastName = driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div"));
+    	Assert.assertEquals(errorLastName.getText(), "Last Name must be between 1 and 32 characters!");
+    	WebElement errorEmail = driver.findElement(By.xpath("//input[@id='input-email']/following-sibling::div"));
+    	Assert.assertEquals(errorEmail.getText(), "E-Mail Address does not appear to be valid!");
+    	WebElement errorTelephone =  driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div"));
+    	Assert.assertEquals(errorTelephone.getText(), "Telephone must be between 3 and 32 characters!");
+        WebElement errorPassword = driver.findElement(By.xpath("//input[@id='input-password']/following-sibling::div"));
+        Assert.assertEquals(errorPassword.getText(), "Password must be between 4 and 20 characters!");
     }
     
 }
