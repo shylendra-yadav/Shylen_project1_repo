@@ -64,6 +64,8 @@ import base.BaseTest;
     	driver.findElement(By.xpath(prop.getProperty("RegisterButtonXpath"))).click();
     	driver.findElement(By.xpath(prop.getProperty("RegisterContinueButtonXpath"))).click();
     	
+    	WebElement errorWarning = driver.findElement(By.xpath("//div[text()='Warning: You must agree to the Privacy Policy!']"));
+    	Assert.assertEquals(errorWarning.getText(), "Warning: You must agree to the Privacy Policy!");
     	WebElement errorFirstName =  driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div"));
     	Assert.assertEquals(errorFirstName.getText(), "First Name must be between 1 and 32 characters!");
     	WebElement errorLastName = driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div"));
