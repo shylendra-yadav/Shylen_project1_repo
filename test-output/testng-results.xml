@@ -1,55 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-26T23:25:02 IST" name="Default suite" finished-at="2023-10-26T23:25:03 IST" duration-ms="65">
+  <suite started-at="2023-10-27T21:57:55 IST" name="Default suite" finished-at="2023-10-27T21:58:17 IST" duration-ms="21476">
     <groups>
     </groups>
-    <test started-at="2023-10-26T23:25:02 IST" name="Default test" finished-at="2023-10-26T23:25:03 IST" duration-ms="65">
+    <test started-at="2023-10-27T21:57:55 IST" name="Default test" finished-at="2023-10-27T21:58:17 IST" duration-ms="21476">
       <class name="testcase.Login">
-        <test-method signature="verifyWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testcase.Login@209da20d]" started-at="2023-10-26T23:25:03 IST" name="verifyWithValidCredentials" data-provider="testdata" finished-at="2023-10-26T23:25:03 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Some DataProvider public java.lang.String[][] utilities.ReadXlsData.getXlsData(java.lang.String) throws org.apache.poi.EncryptedDocumentException,java.io.IOException parameters unresolved:  at 0 type class java.lang.String
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Some DataProvider public java.lang.String[][] utilities.ReadXlsData.getXlsData(java.lang.String) throws org.apache.poi.EncryptedDocumentException,java.io.IOException parameters unresolved:  at 0 type class java.lang.String
-
-at org.testng.internal.MethodInvocationHelper.getParameters(MethodInvocationHelper.java:220)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:145)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:57:56 IST" name="setUp" finished-at="2023-10-27T21:58:01 IST" duration-ms="4624" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWithValidCredentials -->
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:01 IST" name="loginTest" data-provider="testdata" finished-at="2023-10-27T21:58:02 IST" duration-ms="906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaa@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:02 IST" name="afterTest" finished-at="2023-10-27T21:58:02 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:02 IST" name="setUp" finished-at="2023-10-27T21:58:06 IST" duration-ms="3638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:06 IST" name="loginTest" data-provider="testdata" finished-at="2023-10-27T21:58:07 IST" duration-ms="871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaa@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:07 IST" name="afterTest" finished-at="2023-10-27T21:58:07 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:07 IST" name="setUp" finished-at="2023-10-27T21:58:11 IST" duration-ms="3645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:11 IST" name="loginTest" data-provider="testdata" finished-at="2023-10-27T21:58:12 IST" duration-ms="887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:12 IST" name="afterTest" finished-at="2023-10-27T21:58:12 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:12 IST" name="setUp" finished-at="2023-10-27T21:58:15 IST" duration-ms="3623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:15 IST" name="loginTest" data-provider="testdata" finished-at="2023-10-27T21:58:17 IST" duration-ms="1235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.Login@1b11171f]" started-at="2023-10-27T21:58:17 IST" name="afterTest" finished-at="2023-10-27T21:58:17 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- testcase.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -2,8 +2,9 @@ package utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -16,8 +17,9 @@ import org.testng.annotations.DataProvider;
 public class ReadXlsData {
 	
 	@DataProvider(name="testdata")
-	public String[][] getXlsData(String excelSheetName) throws EncryptedDocumentException, IOException  {
+	public String[][] getXlsData(Method m) throws EncryptedDocumentException, IOException  {
 		
+		String excelSheetName = m.getName();
 		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\testdata.xlsx");
 		FileInputStream fis;
 		fis = new FileInputStream(f);
