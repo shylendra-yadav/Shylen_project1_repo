@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 27 12:32:02 IST 2023</td>
+<td>Started on:</td><td>Thu Nov 23 16:39:06 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>86 seconds (86021 ms)</td>
+<tr><td>Total time:</td><td>60 seconds (60570 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,111 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.LoginTest.loginTest()'><b>loginTest</b><br>Test class: testcase.LoginTest<br>Parameters: testing@yopmail.com, Test@123<br/>
+<a href="#Output-196954001" onClick='toggleBox("Output-196954001", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-196954001" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-196954001">
+Method name is - loginTest<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.alert-danger&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865e38a136e150e6e622d441bc30913c, findElement {using=css selector, value=.alert-danger}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64999}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64999/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865e38a136e150e6e622d441bc30913c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+	at testcase.LoginPage.actualWanringMessage(LoginPage.java:43)
+	at testcase.LoginTest.loginTest(LoginTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace196954001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace196954001'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.alert-danger&quot;}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [865e38a136e150e6e622d441bc30913c, findElement {using=css selector, value=.alert-danger}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64999}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64999/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 865e38a136e150e6e622d441bc30913c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+	at testcase.LoginPage.actualWanringMessage(LoginPage.java:43)
+	at testcase.LoginTest.loginTest(LoginTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>testcase.LoginTest@5f20155b</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,200 +180,109 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcase.Search.searchTest()'><b>searchTest</b><br>Test class: testcase.Search<br>Parameters: hp<br/>
-<a href="#Output-694580932" onClick='toggleBox("Output-694580932", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcase.SearchTest.searchTest()'><b>searchTest</b><br>Test class: testcase.SearchTest<br>Parameters: dell<br/>
+<a href="#Output-2093834526" onClick='toggleBox("Output-2093834526", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-694580932" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-694580932">
+<a href="#Output-2093834526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2093834526">
 Method name is - searchTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>testcase.Search@6f1c29b7</td></tr>
-<tr>
-<td title='testcase.Desktop.addToCartDesktopPcTest()'><b>addToCartDesktopPcTest</b><br>Test class: testcase.Desktop<br/>
-<a href="#Output-1120887625" onClick='toggleBox("Output-1120887625", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1120887625" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1120887625">
-Method name is - addToCartDesktopPcTest<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>5</td>
-<td>testcase.Desktop@37911f88</td></tr>
+<td>testcase.SearchTest@239105a8</td></tr>
 <tr>
-<td title='testcase.Login.loginTest()'><b>loginTest</b><br>Test class: testcase.Login<br>Parameters: testing@yopmail.com, 123<br/>
-<a href="#Output-251074782" onClick='toggleBox("Output-251074782", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcase.LoginTest.loginTest()'><b>loginTest</b><br>Test class: testcase.LoginTest<br>Parameters: aaa@yopmail.com, Test@123<br/>
+<a href="#Output-876487258" onClick='toggleBox("Output-876487258", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-251074782" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-251074782">
+<a href="#Output-876487258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-876487258">
 Method name is - loginTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>testcase.Login@560348e6</td></tr>
-<tr>
-<td title='testcase.Search.searchTest()'><b>searchTest</b><br>Test class: testcase.Search<br>Parameters: mac<br/>
-<a href="#Output-2113171614" onClick='toggleBox("Output-2113171614", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2113171614" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2113171614">
-Method name is - searchTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>testcase.Search@6f1c29b7</td></tr>
-<tr>
-<td title='testcase.Login.loginTest()'><b>loginTest</b><br>Test class: testcase.Login<br>Parameters: aaa@yopmail.com, 123<br/>
-<a href="#Output-1566285515" onClick='toggleBox("Output-1566285515", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1566285515" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1566285515">
-Method name is - loginTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>testcase.Login@560348e6</td></tr>
-<tr>
-<td title='testcase.Desktop.addToCartLaptopNotebooksMacs()'><b>addToCartLaptopNotebooksMacs</b><br>Test class: testcase.Desktop<br/>
-<a href="#Output-415758005" onClick='toggleBox("Output-415758005", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-415758005" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-415758005">
-Method name is - addToCartLaptopNotebooksMacs<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>testcase.Desktop@37911f88</td></tr>
-<tr>
-<td title='testcase.Login.loginTest()'><b>loginTest</b><br>Test class: testcase.Login<br>Parameters: aaa@yopmail.com, Test@123<br/>
-<a href="#Output-1733520096" onClick='toggleBox("Output-1733520096", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1733520096" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1733520096">
-Method name is - loginTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>testcase.Login@560348e6</td></tr>
-<tr>
-<td title='testcase.Search.searchTest()'><b>searchTest</b><br>Test class: testcase.Search<br>Parameters: dell<br/>
-<a href="#Output-1485169201" onClick='toggleBox("Output-1485169201", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1485169201" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1485169201">
-Method name is - searchTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>testcase.Search@6f1c29b7</td></tr>
-<tr>
-<td title='testcase.Search.searchTest()'><b>searchTest</b><br>Test class: testcase.Search<br>Parameters: ball<br/>
-<a href="#Output-1038678108" onClick='toggleBox("Output-1038678108", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1038678108" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1038678108">
-Method name is - searchTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>testcase.Search@6f1c29b7</td></tr>
-<tr>
-<td title='testcase.Desktop.addToCartDesktopMacTest()'><b>addToCartDesktopMacTest</b><br>Test class: testcase.Desktop<br/>
-<a href="#Output-10624116" onClick='toggleBox("Output-10624116", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-10624116" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-10624116">
-Method name is - addToCartDesktopMacTest<br/>
-Status of execution is - 1<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>testcase.Desktop@37911f88</td></tr>
-<tr>
-<td title='testcase.Register.verifyIfUserIsableToRegisterUsingMyAccountRegisterButton()'><b>verifyIfUserIsableToRegisterUsingMyAccountRegisterButton</b><br>Test class: testcase.Register<br/>
-<a href="#Output-981231499" onClick='toggleBox("Output-981231499", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-981231499" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-981231499">
-Method name is - verifyIfUserIsableToRegisterUsingMyAccountRegisterButton<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>1</td>
-<td>testcase.Register@1df8b5b8</td></tr>
+<td>testcase.LoginTest@5f20155b</td></tr>
 <tr>
-<td title='testcase.Register.verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered()'><b>verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered</b><br>Test class: testcase.Register<br/>
-<a href="#Output-1379222018" onClick='toggleBox("Output-1379222018", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcase.SearchTest.searchTest()'><b>searchTest</b><br>Test class: testcase.SearchTest<br>Parameters: mac<br/>
+<a href="#Output-1653634548" onClick='toggleBox("Output-1653634548", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1379222018" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1379222018">
-Method name is - verifyIfUserDisplayedErrorMsgWhenDetailsNotEntered<br/>
+<a href="#Output-1653634548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1653634548">
+Method name is - searchTest<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>testcase.Register@1df8b5b8</td></tr>
+<td>testcase.SearchTest@239105a8</td></tr>
 <tr>
-<td title='testcase.Desktop.addToCartLaptopNotebooksWindows()'><b>addToCartLaptopNotebooksWindows</b><br>Test class: testcase.Desktop<br/>
-<a href="#Output-774610771" onClick='toggleBox("Output-774610771", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcase.RegisterTest.registerTestScenario2()'><b>registerTestScenario2</b><br>Test class: testcase.RegisterTest<br/>
+<a href="#Output-92784065" onClick='toggleBox("Output-92784065", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-774610771" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-774610771">
-Method name is - addToCartLaptopNotebooksWindows<br/>
+<a href="#Output-92784065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-92784065">
+Method name is - registerTestScenario2<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>testcase.Desktop@37911f88</td></tr>
+<td>3</td>
+<td>testcase.RegisterTest@72ade7e3</td></tr>
 <tr>
-<td title='testcase.Login.loginTest()'><b>loginTest</b><br>Test class: testcase.Login<br>Parameters: testing@yopmail.com, Test@123<br/>
-<a href="#Output-637524006" onClick='toggleBox("Output-637524006", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcase.SearchTest.searchTest()'><b>searchTest</b><br>Test class: testcase.SearchTest<br>Parameters: ball<br/>
+<a href="#Output-504959312" onClick='toggleBox("Output-504959312", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-637524006" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-637524006">
+<a href="#Output-504959312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-504959312">
+Method name is - searchTest<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>testcase.SearchTest@239105a8</td></tr>
+<tr>
+<td title='testcase.LoginTest.loginTest()'><b>loginTest</b><br>Test class: testcase.LoginTest<br>Parameters: testing@yopmail.com, Test123<br/>
+<a href="#Output-1579610605" onClick='toggleBox("Output-1579610605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1579610605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1579610605">
 Method name is - loginTest<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>testcase.Login@560348e6</td></tr>
+<td>1</td>
+<td>testcase.LoginTest@5f20155b</td></tr>
 <tr>
-<td title='testcase.Register.verifyIfUserIsableToRegisterFromNewCustomerPage()'><b>verifyIfUserIsableToRegisterFromNewCustomerPage</b><br>Test class: testcase.Register<br/>
-<a href="#Output-348756982" onClick='toggleBox("Output-348756982", this, "Show output", "Hide output");'>Show output</a>
+<td title='testcase.RegisterTest.registerTestScenario1()'><b>registerTestScenario1</b><br>Test class: testcase.RegisterTest<br/>
+<a href="#Output-1000419469" onClick='toggleBox("Output-1000419469", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-348756982" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-348756982">
-Method name is - verifyIfUserIsableToRegisterFromNewCustomerPage<br/>
+<a href="#Output-1000419469" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1000419469">
+Method name is - registerTestScenario1<br/>
 Status of execution is - 1<br/>
 </div>
 </td>
 <td></td>
 <td>2</td>
-<td>testcase.Register@1df8b5b8</td></tr>
+<td>testcase.RegisterTest@72ade7e3</td></tr>
+<tr>
+<td title='testcase.SearchTest.searchTest()'><b>searchTest</b><br>Test class: testcase.SearchTest<br>Parameters: hp<br/>
+<a href="#Output-673992096" onClick='toggleBox("Output-673992096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673992096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673992096">
+Method name is - searchTest<br/>
+Status of execution is - 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testcase.SearchTest@239105a8</td></tr>
 </table><p>
 </body>
 </html>
