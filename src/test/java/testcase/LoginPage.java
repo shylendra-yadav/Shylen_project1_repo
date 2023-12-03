@@ -19,6 +19,8 @@ public class LoginPage {
 	private WebElement getErrorMessage;
 	@FindBy(linkText = "Edit your account information")
 	private WebElement successMessage; 
+	@FindBy(xpath ="//h2[text()= 'My Account']")
+	private WebElement myAccountText;
 	
     
     public LoginPage(WebDriver driver) {
@@ -50,5 +52,14 @@ public class LoginPage {
     }
     public boolean actualWarningMessageDisplayed() {
     	return getErrorMessage.isDisplayed();
+    }
+    public String successfulLoginMessage() {
+    	return "User logged in successfully";
+    }
+    public String MyAccountText() {
+    	return myAccountText.getText();
+    }
+    public boolean MyAccountTextDisplayed() {
+    	return myAccountText.isDisplayed();
     }
 }

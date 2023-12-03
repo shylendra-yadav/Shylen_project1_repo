@@ -17,6 +17,18 @@ public class SearchPage {
 	private WebElement noProductMessage;
 	@FindBy(css = ".product-layout")
 	private WebElement pageLayout;
+	@FindBy(linkText = "iMac")
+	private WebElement iMac;
+	@FindBy(linkText = "MacBook")
+	private WebElement MacBook;
+	@FindBy(linkText = "MacBook Air")
+	private WebElement MacBookAir;
+	@FindBy(linkText = "MacBook Pro")
+	private WebElement MacBookPro;
+	@FindBy(xpath = "//span[@class = 'hidden-xs hidden-sm hidden-md'][text() = 'Add to Cart']")
+	private WebElement iMacAddToCart;
+	@FindBy(css = ".alert-success")
+	private WebElement addToCartSuccessMessage;
     
 	public SearchPage(WebDriver driver) {
 		
@@ -41,6 +53,41 @@ public class SearchPage {
 	public boolean NoProductMessageDisplayed() {
 		return noProductMessage.isDisplayed();
 	}
+	public String iMacProduct() {
+		return iMac.getText();
+	}
+	public String MacBookProduct() {
+		return MacBook.getText();
+	}
+	public String MacBookAirProduct() {
+		return MacBookAir.getText();
+	}
+	public String MacBookProProduct() {
+		return MacBookPro.getText();
+	}
+	
+	public boolean iMacDisplayed() {
+		return iMac.isDisplayed();
+	}
+	public boolean MacBookDisplayed() {
+		return MacBook.isDisplayed();
+	}
+	public boolean MacBookAirDisplayed() {
+		return MacBookAir.isDisplayed();
+	}
+	public boolean MacBookProDisplayed() {
+		return MacBookPro.isDisplayed();
+	}
+	public void ClickAddToCart() {
+		iMacAddToCart.click();
+	}
+	public boolean AddToCartSuccessMessageDisplayed() {
+		return addToCartSuccessMessage.isDisplayed();
+	}
+	public String AddToCartSuccessMessage() {
+		return addToCartSuccessMessage.getText();
+	}
+	
 	public Dimension PageLayout() {
 		return PageLayout();
 	}

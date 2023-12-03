@@ -25,8 +25,7 @@ public class BaseTest {
 			
 			FileReader fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
 			prop.load(fr);
-			FileReader fr1 = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\locator.properties");
-			prop.load(fr1);
+			
 		}
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 			
