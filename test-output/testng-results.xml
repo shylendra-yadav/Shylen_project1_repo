@@ -1,17 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T01:49:35 IST" name="Default suite" finished-at="2023-12-04T01:49:44 IST" duration-ms="8973">
+  <suite started-at="2023-12-04T22:19:47 IST" name="Suite1" finished-at="2023-12-04T22:20:14 IST" duration-ms="27461">
     <groups>
     </groups>
-    <test started-at="2023-12-04T01:49:35 IST" name="Default test" finished-at="2023-12-04T01:49:44 IST" duration-ms="8973">
-      <class name="testcase.ItemsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ItemsTest@1151e434]" started-at="2023-12-04T01:49:36 IST" name="setUp" finished-at="2023-12-04T01:49:40 IST" duration-ms="3883" status="PASS">
+    <test started-at="2023-12-04T22:19:47 IST" name="Test1" finished-at="2023-12-04T22:20:14 IST" duration-ms="27461">
+      <class name="testcase.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.LoginTest@4e928fbf]" started-at="2023-12-04T22:19:47 IST" name="setUp" finished-at="2023-12-04T22:19:52 IST" duration-ms="4110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyViewCartErrormessage(java.lang.String)[pri:2, instance:testcase.ItemsTest@1151e434]" started-at="2023-12-04T01:49:40 IST" name="verifyViewCartErrormessage" data-provider="testdata" finished-at="2023-12-04T01:49:44 IST" duration-ms="3554" status="PASS">
+        <test-method signature="loginWithValidUser(java.lang.String,java.lang.String)[pri:0, instance:testcase.LoginTest@4e928fbf]" started-at="2023-12-04T22:19:52 IST" name="loginWithValidUser" data-provider="testdata" finished-at="2023-12-04T22:19:53 IST" duration-ms="1197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUser -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.LoginTest@4e928fbf]" started-at="2023-12-04T22:19:53 IST" name="afterTest" finished-at="2023-12-04T22:19:53 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcase.LoginTest -->
+      <class name="testcase.ItemsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ItemsTest@3224a577]" started-at="2023-12-04T22:20:02 IST" name="setUp" finished-at="2023-12-04T22:20:04 IST" duration-ms="2761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPriceValuesInItemsBucket(java.lang.String)[pri:1, instance:testcase.ItemsTest@3224a577]" started-at="2023-12-04T22:20:04 IST" name="verifyPriceValuesInItemsBucket" data-provider="testdata" finished-at="2023-12-04T22:20:07 IST" duration-ms="2763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceValuesInItemsBucket -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.ItemsTest@3224a577]" started-at="2023-12-04T22:20:07 IST" name="afterTest" finished-at="2023-12-04T22:20:07 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ItemsTest@3224a577]" started-at="2023-12-04T22:20:07 IST" name="setUp" finished-at="2023-12-04T22:20:10 IST" duration-ms="2909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyViewCartErrormessage(java.lang.String)[pri:2, instance:testcase.ItemsTest@3224a577]" started-at="2023-12-04T22:20:10 IST" name="verifyViewCartErrormessage" data-provider="testdata" finished-at="2023-12-04T22:20:14 IST" duration-ms="3414" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +67,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyViewCartErrormessage -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.ItemsTest@1151e434]" started-at="2023-12-04T01:49:44 IST" name="afterTest" finished-at="2023-12-04T01:49:44 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.ItemsTest@3224a577]" started-at="2023-12-04T22:20:14 IST" name="afterTest" finished-at="2023-12-04T22:20:14 IST" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- testcase.ItemsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testcase.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.SearchTest@352ff4da]" started-at="2023-12-04T22:19:53 IST" name="setUp" finished-at="2023-12-04T22:19:57 IST" duration-ms="3429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyIfMacProductsAreDisplayed(java.lang.String)[pri:1, instance:testcase.SearchTest@352ff4da]" started-at="2023-12-04T22:19:57 IST" name="verifyIfMacProductsAreDisplayed" data-provider="testdata" finished-at="2023-12-04T22:19:57 IST" duration-ms="864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfMacProductsAreDisplayed -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.SearchTest@352ff4da]" started-at="2023-12-04T22:19:57 IST" name="afterTest" finished-at="2023-12-04T22:19:58 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.SearchTest@352ff4da]" started-at="2023-12-04T22:19:58 IST" name="setUp" finished-at="2023-12-04T22:20:01 IST" duration-ms="2811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addImacToCart(java.lang.String)[pri:2, instance:testcase.SearchTest@352ff4da]" started-at="2023-12-04T22:20:01 IST" name="addImacToCart" data-provider="testdata" finished-at="2023-12-04T22:20:01 IST" duration-ms="939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addImacToCart -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcase.SearchTest@352ff4da]" started-at="2023-12-04T22:20:01 IST" name="afterTest" finished-at="2023-12-04T22:20:02 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testcase.SearchTest -->
+      <class name="utilities.TestUtils">
+        <test-method is-config="true" signature="InitExentReport()[pri:0, instance:utilities.TestUtils@7f284218]" started-at="2023-12-04T22:19:46 IST" name="InitExentReport" finished-at="2023-12-04T22:19:47 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitExentReport -->
+        <test-method is-config="true" signature="generateReports()[pri:0, instance:utilities.TestUtils@7f284218]" started-at="2023-12-04T22:20:15 IST" name="generateReports" finished-at="2023-12-04T22:20:15 IST" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReports -->
+      </class> <!-- utilities.TestUtils -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
 </testng-results>

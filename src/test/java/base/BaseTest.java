@@ -9,14 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-
 public class BaseTest {
-	
 	
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public static FileReader fr;
-	public static FileReader fr1;
 	
 	@BeforeMethod
 	public void setUp() throws IOException
@@ -47,9 +44,7 @@ public class BaseTest {
 	    @AfterMethod
 		public void afterTest() {
 			driver.quit();
-			
 		
-	    
 	    }         
 
 }

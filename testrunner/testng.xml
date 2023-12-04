@@ -8,9 +8,10 @@
   <test name="Test1">
     <classes>
       <class name="base.BaseTest"/>
+      <class name="utilities.TestUtils"/>
       <class name="testcase.LoginTest"/>
-      <class name="testcase.RegisterTest"/> 
       <class name="testcase.SearchTest"/>
+      <class name="testcase.ItemsTest"/>
     </classes>
   </test> <!-- Test1 -->
 </suite> <!-- Suite1 -->
