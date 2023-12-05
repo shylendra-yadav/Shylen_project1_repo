@@ -23,19 +23,19 @@ public class SearchTest extends BaseTest {
 			searchPage.ProuctFoundMessage();
 
 			softAssert.assertTrue(searchPage.ProuctFoundMessageDisplayed());
-			System.out.println(searchPage.ProuctFoundMessage());
+			System.out.println(searchPage.ProuctFoundMessage()+ " "+"is displayed");
 
 			softAssert.assertTrue(searchPage.iMacDisplayed());
-			System.out.println(searchPage.iMacProduct());
+			System.out.println(searchPage.iMacProduct()+ " "+"is displayed");
 
 			softAssert.assertTrue(searchPage.MacBookDisplayed());
-			System.out.println(searchPage.MacBookProduct());
+			System.out.println(searchPage.MacBookProduct()+ " "+"is displayed");
 
 			softAssert.assertTrue(searchPage.MacBookAirDisplayed());
-			System.out.println(searchPage.MacBookAirProduct());
+			System.out.println(searchPage.MacBookAirProduct()+ " "+"is displayed");
 
 			softAssert.assertTrue(searchPage.MacBookProDisplayed());
-			System.out.println(searchPage.MacBookProProduct());
+			System.out.println(searchPage.MacBookProProduct()+ " "+"is displayed");
 
 		} else {
 			searchPage.NoProductMessage();
@@ -70,7 +70,7 @@ public class SearchTest extends BaseTest {
 			System.out.println(searchPage.ProuctFoundMessage());
 
 			softAssert.assertTrue(searchPage.iMacDisplayed());
-			System.out.println(searchPage.iMacProduct());
+			System.out.println(searchPage.iMacProduct()+ " "+"is displayed");
 
 			searchPage.ClickAddToCart();
 

@@ -25,16 +25,16 @@ public class ItemsTest extends BaseTest{
 		itemsPage.ClickItemsButton();
 		
 		softAssert.assertEquals(itemsPage.SubTotalActualValue(), itemsPage.SubTotalExpectedValue());
-		System.out.println(itemsPage.SubTotalActualValue());
+		System.out.println("actual price ="+" "+itemsPage.SubTotalActualValue()+" "+"expected price ="+" "+itemsPage.SubTotalExpectedValue());
 		
 		softAssert.assertEquals(itemsPage.EcoTaxActualValue(), itemsPage.EcoTaxExpectedValue());
-		System.out.println(itemsPage.EcoTaxActualValue());
+		System.out.println("actual price ="+" "+itemsPage.EcoTaxActualValue()+" "+"expected price ="+" "+ itemsPage.EcoTaxExpectedValue());
 		
 		softAssert.assertEquals(itemsPage.VATactualValue(), itemsPage.VATexpectedValue());
-		System.out.println(itemsPage.VATactualValue());
+		System.out.println("actual price ="+" "+itemsPage.VATactualValue()+" "+"expected price ="+" "+ itemsPage.VATexpectedValue());
 		
 		softAssert.assertEquals(itemsPage.TotalActualvalue(), itemsPage.TotalExpectedValue());
-		System.out.println(itemsPage.TotalActualvalue());
+		System.out.println("actual price ="+" "+itemsPage.TotalActualvalue()+" "+"expected price ="+" "+ itemsPage.TotalExpectedValue());
 		
 		
 	}

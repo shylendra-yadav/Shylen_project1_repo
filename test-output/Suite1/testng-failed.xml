@@ -7,14 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="testcase.ItemsTest">
+      <class name="testcase.SearchTest">
         <methods>
           <include name="setUp"/>
-          <include name="verifyViewCartErrormessage"/>
+          <include name="addImacToCart"/>
           <include name="afterTest"/>
-          <include name="verifyPriceValuesInItemsBucket"/>
         </methods>
-      </class> <!-- testcase.ItemsTest -->
+      </class> <!-- testcase.SearchTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

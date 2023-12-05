@@ -25,7 +25,7 @@ public class LoginTest extends BaseTest {
 		loginPage.enterPassword(password);
 		loginPage.clickLoginButton();
 		Assert.assertTrue(loginPage.MyAccountTextDisplayed());
-		System.out.println(loginPage.MyAccountText());
+		System.out.println(loginPage.MyAccountText()+" "+"is displayed after login");
 
 		System.out.println(loginPage.successfulLoginMessage());
 
