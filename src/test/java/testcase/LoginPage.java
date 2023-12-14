@@ -62,4 +62,5 @@ public class LoginPage {
     public boolean MyAccountTextDisplayed() {
     	return myAccountText.isDisplayed();
     }
+    
 }

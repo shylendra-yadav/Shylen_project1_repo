@@ -23,7 +23,7 @@ public String[][] getXlsData(Method m) throws EncryptedDocumentException, IOExce
         Workbook wb = WorkbookFactory.create(fis);
         Sheet sheetName = wb.getSheet(excelSheetName);
         int totalRows = sheetName.getLastRowNum();
-        System.out.println(totalRows);
+        System.out.print(totalRows+"   ");
         Row rowCells = sheetName.getRow(0);
         int totalCols = rowCells.getLastCellNum();
         System.out.println(totalCols);
