@@ -1,6 +1,7 @@
 package testcase;
 
 import org.testng.annotations.Test;
+import graphql.*;
 
 import base.BaseTest;
 import graphql.Assert;

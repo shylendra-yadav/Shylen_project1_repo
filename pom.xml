@@ -5,6 +5,12 @@
 	<groupId>com.Test</groupId>
 	<artifactId>TestAutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<repositories>
+    <repository>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+</repositories>
 	<dependencies>
 
 		<dependency>
@@ -87,6 +93,12 @@
     <artifactId>maven-surefire-plugin</artifactId>
     <version>3.2.2</version>
 </dependency>
+<dependency>
+    <groupId>com.graphql-java</groupId>
+    <artifactId>graphql-java</artifactId>
+    <version>17.3</version> <!-- Use the latest version available -->
+</dependency>
+
 
 
 		<dependency>
