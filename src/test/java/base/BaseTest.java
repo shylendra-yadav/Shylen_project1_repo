@@ -9,15 +9,21 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.aventstack.extentreports.ExtentReports;
+
+import utilities.TestUtils;
+
 public class BaseTest {
 	
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public static FileReader fr;
 	
+	
 	@BeforeMethod
 	public void setUp() throws IOException
 	{
+		
 		if(driver==null) {
 			
 			FileReader fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
@@ -40,9 +46,11 @@ public class BaseTest {
 			driver.get(prop.getProperty("testurl"));
 			
 		}
+		
 	}
 	    @AfterMethod
 		public void afterTest() {
+	    	
 			driver.quit();
 		
 	    }         

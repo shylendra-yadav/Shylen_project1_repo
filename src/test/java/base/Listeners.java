@@ -14,11 +14,12 @@ public class Listeners extends TestListenerAdapter implements ITestListener {
 	
 	private TestUtils testUtils = new TestUtils();
 	private ExtentTest extentTest;
-	ExtentReports extentreports;
+	private ExtentReports extentreports;
 	
 	public void onTestStart ( ITestResult result) {
 		
 		extentTest = TestUtils.extentreports.createTest(result.getMethod().getMethodName());
+		
 	}
 	
 	public void onTestSuccess (ITestResult result) {
@@ -42,9 +43,18 @@ public class Listeners extends TestListenerAdapter implements ITestListener {
     }
     	public void onFinish(ITestContext context) {
             TestUtils.extentreports.flush();
+            
 }
     	public void getnameMethod(ITestContext context) {
 
     		extentTest = extentreports.createTest(context.getName());
     	}
 }
+
+
+
+
+
+
+
+

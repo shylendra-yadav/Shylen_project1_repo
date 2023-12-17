@@ -20,7 +20,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import base.BaseTest;
 
 public class TestUtils extends BaseTest{
-	public static ExtentReports extentreports; 
+	public static ExtentReports extentreports = new ExtentReports();
 	public static ExtentTest extentTest;
 	public void Screenshots() throws IOException {
 		
@@ -30,13 +30,12 @@ public class TestUtils extends BaseTest{
     	FileUtils.copyFile(screenshotFile, new File(".//screenshot//" + screenshotfilename + ".png"));
 	}
 	
+	
 	@BeforeSuite
 	public void InitExentReport() {
 
-		ExtentSparkReporter sparkreporter = new ExtentSparkReporter("testreport_extent.html");
-		extentreports = new ExtentReports();
-		extentreports.attachReporter(sparkreporter);
-
+		//ExtentSparkReporter sparkreporter = new ExtentSparkReporter("testreport_extent.html");
+		extentreports.attachReporter(new ExtentSparkReporter("testreport_extent.html"));
 		extentreports.setSystemInfo("Operating Sytsem : ", System.getProperty("os.name"));
 		extentreports.setSystemInfo("JAVA Version : ", System.getProperty("java.version"));
 
@@ -47,7 +46,9 @@ public class TestUtils extends BaseTest{
 	public void generateReports() throws IOException {
 
 		extentreports.flush();
+		extentreports.getReport();
 		Desktop.getDesktop().browse(new File("testreport_extent.html").toURI());
+		
 	}
 
 }
